@@ -76,7 +76,7 @@
                         dom: '<"toolbar">frtip',
                     });
         @permission('create-divisi')
-        $("div.toolbar").html('<a href="{{ route('divisi.create') }}" class="btn btn-gradient btn-rounded waves-light waves-effect w-md">Tambah Divisi</a>');
+        $("div.toolbar").html('<a href="{{ route('divisi.create') }}" class="btn btn-gradient btn-rounded waves-light waves-effect w-md">+Tambah</a>');
         @endpermission
 
     });

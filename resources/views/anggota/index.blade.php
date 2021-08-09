@@ -35,9 +35,9 @@
                         <th>#ID</th>
                         <th>NIK</th>
                         <th>Nama</th>
-                        <th>Inisial</th>
+                        <th>Pekerjaan</th>
                         <th>Tanggal Daftar</th>
-                        <th>Home Base</th>
+                        <th>Alamat</th>
                         <th>Status</th>
                         <th>ACTION DEFAULT</th>
                     </tr>
@@ -65,26 +65,55 @@
 <script src="{{ asset('plugins/datatables/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('plugins/datatables/buttons.print.min.js') }}"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function() {
         var oTable = $('#datatable-buttons').DataTable({
             processing: true,
             serverSide: true,
             ajax: "{{ route('anggota.index') }}",
-            columns: [
-                { data: 'id', name: 'id' },
-                { data: 'nik', name: 'nik' },
-                { data: 'nama', name: 'nama' },
-                { data: 'inisial', name: 'inisial' },
-                { data: 'tgl_daftar', name: 'tgl_daftar' },
-                { data: 'homebase', name: 'homebase' },
-                { data: 'status', name: 'status', orderable: false, searchable: false },
-                { data: 'action', name: 'action', orderable: false, searchable: false },
+            columns: [{
+                    data: 'id',
+                    name: 'id'
+                },
+                {
+                    data: 'nik',
+                    name: 'nik'
+                },
+                {
+                    data: 'nama',
+                    name: 'nama'
+                },
+                {
+                    data: 'inisial',
+                    name: 'inisial'
+                },
+                {
+                    data: 'tgl_daftar',
+                    name: 'tgl_daftar'
+                },
+                {
+                    data: 'homebase',
+                    name: 'homebase'
+                },
+                {
+                    data: 'status',
+                    name: 'status',
+                    orderable: false,
+                    searchable: false
+                },
+                {
+                    data: 'action',
+                    name: 'action',
+                    orderable: false,
+                    searchable: false
+                },
             ],
             dom: '<"toolbar">frtip',
-            order: [[ 0, "desc" ]],
+            order: [
+                [0, "desc"]
+            ],
             scrollX: true
         });
-        $("div.toolbar").html(`@permission('create-anggota')<a href="{{ route('anggota.create') }}" class="btn btn-gradient waves-light waves-effect w-md">Tambah</a>@endpermission
+        $("div.toolbar").html(`@permission('create-anggota')<a href="{{ route('anggota.create') }}" class="btn btn-gradient waves-light waves-effect w-md">+Tambah</a>@endpermission
         @permission('download-anggota')<a href="{{ route('anggota.export') }}" class="btn btn-success waves-light waves-effect w-md"><i class="mdi mdi-file-excel"></i>Download</a>@endpermission`);
 
     });

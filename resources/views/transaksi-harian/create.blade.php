@@ -91,7 +91,9 @@
                             <label class="control-label" for="name"> Transaksi</label>
                             <div class="">
                                 <select name="jenis_transaksi" id="" class="form-control">
-                                    <option value=""><---Jenis Transaksi --></option>
+                                    <option value="">
+                                        <---Jenis Transaksi -->
+                                    </option>
                                     <option value="1">Debet</option>
                                     <option value="2">Kredit</option>
                                 </select>
@@ -210,26 +212,31 @@
 <script src="{{ asset('plugins/select2/js/select2.min.js') }}" type="text/javascript"></script>
 <script src="{{ asset('plugins/bootstrap-select/js/bootstrap-select.js') }}" type="text/javascript"></script>
 <script>
-    $(function(){
+    $(function() {
         $(".select2").select2();
 
-        $('.biaya').maskMoney({prefix: 'Rp. ', thousands: '.', decimal: ',', precision: 0});
+        $('.biaya').maskMoney({
+            prefix: 'Rp. ',
+            thousands: '.',
+            decimal: ',',
+            precision: 0
+        });
 
-        $('select[name=divisi_id]').on('change', function(){
-            var divisiId = $(this). children("option:selected"). val();
-            if(divisiId === '1' || divisiId === '2')
-            {
+        $('select[name=divisi_id]').on('change', function() {
+            var divisiId = $(this).children("option:selected").val();
+            if (divisiId === '1' || divisiId === '2') {
                 $('.anggota').css('display', '');
-            }else {
+            } else {
                 $('.anggota').css('display', 'none');
                 $(".anggota option:selected").prop("selected", false);
             }
         });
 
-        $('select[name=anggota_id]').on('change', function(){
-            var anggotaId = $(this). children("option:selected"). val();
+        $('select[name=anggota_id]').on('change', function() {
+            var anggotaId = $(this).children("option:selected").val();
             $.ajax({
-                url: '{{ route('transaksi-harian.chek-anggota')}}',
+                url: '{{ route('
+                transaksi - harian.chek - anggota ')}}',
                 type: 'GET',
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -237,8 +244,7 @@
                 data: {
                     anggota_id: anggotaId
                 },
-                success: function(data)
-                {
+                success: function(data) {
                     console.log(data)
                     $('#nama-anggota').text(data.nama)
                     $('#nama-inisial').text(data.inisial)
@@ -255,30 +261,26 @@
         });
 
 
-        $('select[name=jenis_transaksi]').on('change', function(){
+        $('select[name=jenis_transaksi]').on('change', function() {
 
             var divisiId = $("select[name=divisi_id] option:selected").val();
-            var jenisTransaksiId = $(this). children("option:selected"). val();
-            if(divisiId === '1')
-            {
+            var jenisTransaksiId = $(this).children("option:selected").val();
+            if (divisiId === '1') {
 
-                if(jenisTransaksiId === '1')
-                {
+                if (jenisTransaksiId === '1') {
                     $('#transaksi-debet').css('display', '');
                     $('#transaksi-kredit').css('display', 'none');
-                }else {
+                } else {
                     $('#transaksi-debet').css('display', 'none');
                     $('#transaksi-kredit').css('display', '');
                 }
             }
 
-            if(divisiId === '2')
-            {
-                if(jenisTransaksiId === '1')
-                {
+            if (divisiId === '2') {
+                if (jenisTransaksiId === '1') {
                     $('#pinjam-debet').css('display', '');
                     $('#pinjam-kredit').css('display', 'none');
-                }else {
+                } else {
                     $('#pinjam-debet').css('display', 'none');
                     $('#pinjam-kredit').css('display', '');
                 }

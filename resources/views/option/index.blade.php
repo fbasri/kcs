@@ -27,8 +27,8 @@
                     <div class="card m-b-30">
                         <div class="card-body">
 
-                            <h4 class="mt-0 header-title">Options</h4>
-                            <p class="sub-title">Silahkan Atur Sesuaikan Dengan Perusahaan Anda</p>
+                            
+                            
 
                             <!-- Nav tabs -->
                             <ul class="nav nav-pills nav-justified" role="tablist">

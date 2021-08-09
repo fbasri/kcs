@@ -31,7 +31,7 @@
                 @permission('manage-biaya')
                 <li class="{{ set_active(['biaya.index', 'biaya.create'])}}">
                     <a href="{{ route('biaya.index') }}" class="{{ set_active(['biaya.index', 'biaya.create'])}}">
-                        <i class="fa fa-money"></i> <span>Biaya</span>
+                        <i class="fa fa-money"></i> <span>Jenis Transaksi</span>
                     </a>
                 </li>
                 @endpermission
@@ -39,13 +39,13 @@
                 |manage-kredit-pinjaman|manage-debet-divisi|manage-kredit-divisi|manage-copy-saldo')
                 <li class="menu-title">Transaksi</li>
                 @endpermission
-                @permission('manage-copy-saldo')
+                <!-- @permission('manage-copy-saldo')
                 <li class="{{ set_active(['copy-saldo.index', 'copy-saldo.create', 'copy-saldo.edit'])}}">
                     <a href="{{ route('copy-saldo.index') }}" class="{{ set_active(['copy-saldo.index', 'copy-saldo.create', 'copy-saldo.edit'])}}">
                         <i class="fi-cloud-upload"></i> <span>Copy Saldo</span>
                     </a>
                 </li>
-                @endpermission
+                @endpermission -->
                 @permission('manage-debet-simpanan|manage-kredit-simpanan')
                 <li class="{{ set_active(['simpanan-debet.index', 'simpanan-debet.create', 'simpanan-debet.edit', 'simpanan-debet.upload',
                 'simpanan-kredit.index', 'simpanan-kredit.create', 'simpanan-kredit.edit', 'simpanan-kredit.upload'])}}">
@@ -114,7 +114,7 @@
                         @endpermission
                     </ul>
                 </li>
-                @endpermission
+                <!-- @endpermission
                 @permission('manage-laporan-kas-bank|manage-laporan-divisi|manage-laporan-pinjaman-anggota|manage-laporan-simpanan-anggota|
                 manage-laporan-pinjaman-all|manage-laporan-simpanan-all')
                 <li class="menu-title">Laporan</li>
@@ -173,7 +173,7 @@
                     <a href="{{ route('option.index') }}" class="{{ set_active(['option.index', 'option.create', 'option.edit'])}}">
                         <i class="fi-cog"></i> <span>Options</span>
                     </a>
-                </li>
+                </li> -->
                 @endpermission
             </ul>
 

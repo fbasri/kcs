@@ -35,8 +35,8 @@
                 <thead>
                     <tr>
                         <th>#ID</th>
-                        <th>Nama Biaya</th>
-                        <th>Jenis Biaya</th>
+                        <th>Nama Transaksi</th>
+                        <th>Jenis Transaksi</th>
                         <th>Divisi</th>
                     </tr>
                 </thead>
@@ -78,7 +78,7 @@
                         dom: '<"toolbar">frtip',
                     });
                     @permission('create-biaya')
-                    $("div.toolbar").html('<a href="{{ route('biaya.create') }}" class="btn btn-gradient btn-rounded waves-light waves-effect w-md">Tambah Biaya</a>');
+                    $("div.toolbar").html('<a href="{{ route('biaya.create') }}" class="btn btn-gradient btn-rounded waves-light waves-effect w-md">+Tambah</a>');
                     @endpermission
 
     });

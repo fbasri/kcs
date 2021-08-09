@@ -11,7 +11,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Master Data</a></li>
                 <li class="breadcrumb-item active"><a href="{{route('biaya.index')}}">Biaya</a></li>
-                    <li class="breadcrumb-item active">Tambah Biaya</li>
+                    <li class="breadcrumb-item active">Tambah Biayaaaa</li>
                 </ol>
                 <small class="text-danger">Tahun Buku : {{ periode()->open_date }} - {{ periode()->close_date }}</small>
             </div>
@@ -23,7 +23,7 @@
 <div class="row">
     <div class="col-6">
         <div class="card-box">
-            <h4 class="m-t-0 header-title">FORM TAMBAH BIAYA</h4>
+            <h4 class="m-t-0 header-title">FORM TAMBAH JENIS TRANSAKSI</h4>
 
             <div class="p-20">
                 <form role="form" class="form-horizontal" method="post" action="{{ route('biaya.store') }}">
