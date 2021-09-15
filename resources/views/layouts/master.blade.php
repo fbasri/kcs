@@ -6,7 +6,7 @@
     $logo=asset(Storage::url('logo/'));
     @endphp
     <meta charset="utf-8" />
-    <title>Koperasi Simpan Pinjam CGI</title>
+    <title>Koperasi Citra Siliwangi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta content="Sistem Informasi Koperasi" name="description" />
     <meta content="Asep IT" name="author" />

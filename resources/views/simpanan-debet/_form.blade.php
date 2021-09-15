@@ -1,8 +1,8 @@
 <div>
     <!-- Section Page 1 -->
-    <h3>Divisi</h3>
+    <h3>Anggota</h3>
     <section>
-        <div class="form-group clearfix">
+        <!-- <div class="form-group clearfix">
             <label class="control-label" for="userName" id="datepicker">Tanggal Transaksi</label>
             <div class="">
                 {!! Form::text('tgl', null, ['class' => 'form-control required datepicker', 'autocomplete' => 'off'])!!}
@@ -12,14 +12,14 @@
             <label class="control-label " for="password"> Jenis Pembayaran *</label>
             <div class="">
                 {!! Form::select('jenis_pembayaran', ['1' => 'Cash', '2' => 'Bank'], null, ['placeholder' => '<---Jenis Transaksi -->', 'class' => 'form-control']) !!}
-            </div>
+            <!-- </div>
         </div>
         <div class="form-group clearfix">
             <label class="control-label " for="confirm">Divisi *</label>
             <div class="">
                 {!! Form::select('divisi_id', [''=>'']+App\Divisi::where('id', '1')->pluck('name','id')->all(), null, ['class' => 'form-control']) !!}
             </div>
-        </div>
+        </div> -->
         <div class="form-group clearfix anggota">
             <label class="control-label " for="confirm">No Anggota *</label>
             {!! Form::select('anggota_id', [''=>'Pilih Anggota']+App\Anggota::pluck('nama','id')->all(), null, ['class' => 'form-control select2']) !!}
@@ -53,6 +53,24 @@
     <!-- Section Page 2 -->
     <h3>Transaksi</h3>
     <section>
+    <div class="form-group clearfix">
+            <label class="control-label" for="userName" id="datepicker">Tanggal Transaksi</label>
+            <div class="">
+                {!! Form::text('tgl', null, ['class' => 'form-control required datepicker', 'autocomplete' => 'off'])!!}
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <label class="control-label " for="password"> Jenis Pembayaran *</label>
+            <div class="">
+                {!! Form::select('jenis_pembayaran', ['1' => 'Cash', '2' => 'Bank'], null, ['placeholder' => '<---Jenis Transaksi -->', 'class' => 'form-control']) !!}
+            </div>
+        </div>
+        <div class="form-group clearfix">
+            <label class="control-label " for="confirm">Divisi *</label>
+            <div class="">
+                {!! Form::select('divisi_id', [''=>'']+App\Divisi::where('id', '1')->pluck('name','id')->all(), null, ['class' => 'form-control']) !!}
+            </div>
+        </div>
         <div class="form-group clearfix">
             <label class="control-label" for="name"> Transaksi</label>
             <div class="">

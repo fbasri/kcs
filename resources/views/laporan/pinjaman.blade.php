@@ -31,6 +31,12 @@
         <div class="card-box">
             <form id="basic-form" action="{{ route('pinjaman-anggota.excel') }}" method="POST">
                 @csrf
+                @permission('filter-pinjaman-anggota')
+                <div class="form-group clearfix">
+                    <label class="control-label " for="confirm">No Anggota *</label>
+                    {!! Form::select('anggota_id', [''=>'Pilih Anggota']+App\Anggota::pluck('nama','id')->all(), null, ['class' => 'form-control select2']) !!}
+                </div>
+                @endpermission
                 <div class="form-group">
                     <label for="">Tanggal Awal</label>
                     <input type="text" class="form-control datepicker" name="start_date" autocomplete="off">
@@ -39,12 +45,12 @@
                     <label for="">Tanggal Akhir</label>
                     <input type="text" class="form-control datepicker" name="end_date" autocomplete="off">
                 </div>
-                @permission('filter-pinjaman-anggota')
+                <!-- @permission('filter-pinjaman-anggota')
                 <div class="form-group clearfix">
                     <label class="control-label " for="confirm">No Anggota *</label>
                     {!! Form::select('anggota_id', [''=>'Pilih Anggota']+App\Anggota::pluck('nama','id')->all(), null, ['class' => 'form-control select2']) !!}
                 </div>
-                @endpermission
+                @endpermission -->
                 @permission('search-pinjaman-anggota')
                 <button class="btn btn-primary" type="button" id="cari" data-url="{{ route('pinjaman-anggota.cari') }}">Cari</button>
                 @endpermission
