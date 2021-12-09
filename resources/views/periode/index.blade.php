@@ -45,7 +45,7 @@
                 <thead>
                     <tr>
                         <th>#ID</th>
-                        <th>Nama Periode</th>
+                        <th>Nama Tahun Buku</th>
                         <th>Tanggal Mulai</th>
                         <th>Tanggal Akhir</th>
                         <th>Status</th>

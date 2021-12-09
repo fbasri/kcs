@@ -70,7 +70,7 @@
                         <td id="nama-anggota">{{ $anggota->nama }}</td>
                     </tr>
                     <tr>
-                        <td><strong>Nama Inisial</strong></td>
+                        <td><strong>No HP</strong></td>
                         <td>:</td>
                         <td id="nama-inisial">{{ $anggota->inisial }}</td>
                     </tr>
@@ -97,7 +97,7 @@
                         <td id="nama-anggota"></td>
                     </tr>
                     <tr>
-                        <td><strong>Nama Inisial</strong></td>
+                        <td><strong>No HP</strong></td>
                         <td>:</td>
                         <td id="nama-inisial"></td>
                     </tr>

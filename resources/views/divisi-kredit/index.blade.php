@@ -11,13 +11,13 @@
     <div class="col-12">
         <div class="page-title-box">
             <div class="float-left">
-                <h4 class="page-title">Divisi Kredit </h4>
+                <h4 class="page-title">Bidang Kredit </h4>
                 <small class="text-danger">Periode : {{ periode()->name }}</small>
             </div>
             <div class="float-right">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Transaksi</a></li>
-                <li class="breadcrumb-item active"><a href="{{route('divisi-kredit.index')}}">Divisi Kredit</a></li>
+                <li class="breadcrumb-item active"><a href="{{route('divisi-kredit.index')}}">Bidang Kredit</a></li>
                 </ol>
                 <small class="text-danger">Tahun Buku : {{ periode()->open_date }} - {{ periode()->close_date }}</small>
             </div>

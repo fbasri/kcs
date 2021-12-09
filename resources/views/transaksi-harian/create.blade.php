@@ -66,7 +66,7 @@
                                     <td id="nama-anggota"></td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Nama Inisial</strong></td>
+                                    <td><strong>Peker</strong></td>
                                     <td>:</td>
                                     <td id="nama-inisial"></td>
                                 </tr>
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="form-group clearfix">
-                                <label for="Pokok" class="control-label">Bunga</label>
+                                <label for="Pokok" class="control-label">Jasa</label>
                                 <div class="">
                                     <input type="hidden" class="form-control" name="cicilan[1][biaya_id]" value="6">
                                     <input type="text" class="form-control biaya" name="cicilan[1][nominal]">

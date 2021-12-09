@@ -1,5 +1,5 @@
 <div class="form-group row">
-    <label class="col-4 col-form-label" for="example-input-normal">NO Anggota</label>
+    <label class="col-4 col-form-label" for="example-input-normal">NIK</label>
     <div class="col-8">
         {{ Form::text('nik', null, ['class' => $errors->has('nik') ? 'form-control is-invalid' : 'form-control', 'placeholder' => 'NIK']) }}
         @error('nik')
@@ -21,9 +21,9 @@
     </div>
 </div>
 <div class="form-group row">
-    <label class="col-4 col-form-label" for="example-input-normal">Pekerjaan</label>
+    <label class="col-4 col-form-label" for="example-input-normal">No HP</label>
     <div class="col-8">
-        {{ Form::text('inisial', null, ['class' => $errors->has('inisial') ? 'form-control is-invalid' : 'form-control', 'placeholder' => 'Pekerjaan']) }}
+        {{ Form::text('inisial', null, ['class' => $errors->has('inisial') ? 'form-control is-invalid' : 'form-control', 'placeholder' => 'No HP']) }}
         @error('inisial')
         <span class="invalid-feedback" role="alert">
             <strong>{{ $message }}</strong>

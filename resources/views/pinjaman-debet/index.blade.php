@@ -51,7 +51,7 @@
                         <th>Divisi</th>
                         <th>Transaksi</th>
                         <th>Cicilan</th>
-                        <th>Bunga</th>
+                        <th>Jasa</th>
                         <th>Keterangan</th>
                         <th>Status Buku</th>
                         <th>ACTION DEFAULT</th>

@@ -47,7 +47,7 @@
                     <tr>
                         <th>#ID</th>
                         <th>Nama Pengguna</th>
-                        <th>Email</th>
+                        <th>NIK</th>
                         <th>Akses</th>
                         <th></th>
                     </tr>

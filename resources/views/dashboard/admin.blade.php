@@ -9,7 +9,7 @@
             </div>
             <div class="float-right">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Kopkar</a></li>
+                    <li class="breadcrumb-item"><a href="#">Koperasi Citra Siliwangi</a></li>
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
                 <small class="text-danger">Tahun Buku : {{ date('d-m-Y', strtotime($periode->open_date)) }} - {{ date('d-m-Y', strtotime($periode->close_date)) }}</small>
@@ -91,7 +91,7 @@
     <div class="col-xs-12 col-md-6 col-lg-6 col-xl-3">
         <div class="card-box tilebox-one">
             <i class="fi-layers float-right"></i>
-            <h6 class="text-muted text-uppercase mb-3">Debet Bunga</h6>
+            <h6 class="text-muted text-uppercase mb-3">Jasa</h6>
             <h6 class="mb-3"><span>{{ Money::stringToRupiah($bunga_pinjaman) }}</span></h6>
         </div>
     </div>

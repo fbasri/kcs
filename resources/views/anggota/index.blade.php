@@ -32,10 +32,10 @@
             <table id="datatable-buttons" class="table table-striped table-bordered display nowrap" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>#ID</th>
+                        <th>#No B.A</th>
                         <th>NIK</th>
                         <th>Nama</th>
-                        <th>Pekerjaan</th>
+                        <th>No HP</th>
                         <th>Tanggal Daftar</th>
                         <th>Alamat</th>
                         <th>Status</th>

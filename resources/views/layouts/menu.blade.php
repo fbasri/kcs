@@ -24,7 +24,7 @@
                 @permission('manage-periode')
                 <li class="{{ set_active(['periode.index', 'periode.create', 'periode.edit'])}}">
                     <a href="{{ route('periode.index') }}" class="{{ set_active(['periode.index', 'periode.create', 'periode.edit'])}}">
-                        <i class="fi-clock"></i> <span>Periode</span>
+                        <i class="fi-clock"></i> <span>Tahun Buku</span>
                     </a>
                 </li>
                 @endpermission
@@ -99,7 +99,7 @@
                 'divisi-kredit.index', 'divisi-kredit.create', 'divisi-kredit.edit', 'divisi-kredit.upload'])}}">
                     <a href="javascript: void(0);" class="{{ set_active(['divisi-debet.index', 'divisi-debet.create', 'divisi-debet.edit', 'divisi-debet.upload',
                     'divisi-kredit.index', 'divisi-kredit.create', 'divisi-kredit.edit', 'divisi-kredit.upload'])}}">
-                        <i class="fi-map"></i> <span> Divisi </span> <span class="menu-arrow"></span>
+                        <i class="fi-map"></i> <span> Bidang </span> <span class="menu-arrow"></span>
                     </a>
                     <ul class="nav-second-level collapse" aria-expanded="false">
                         @permission('manage-debet-divisi')
@@ -135,9 +135,9 @@
                 <li><a href="{{ route('laporan.pinjaman') }}"><i class="fi-file"></i> <span>Pinjaman Anggota</span> </a></li>
                 @endpermission
                 @permission('manage-laporan-divisi')
-                <li><a href="{{ route('laporan.per-divisi') }}"><i class="fi-file"></i> <span>Laporan Per Divisi</span> </a></li>
+                <li><a href="{{ route('laporan.per-divisi') }}"><i class="fi-file"></i> <span>Laporan Per Bidang</span> </a></li>
                 @endpermission
-                <!-- @permission('manage-permissions|manage-user|manage-role|manage-option|manage-module')
+                @permission('manage-permissions|manage-user|manage-role|manage-option|manage-module')
                 <li class="menu-title">Management</li>
                 @endpermission
                 @permission('manage-module')
@@ -174,7 +174,7 @@
                         <i class="fi-cog"></i> <span>Options</span>
                     </a>
                 </li>
-                @endpermission -->
+                @endpermission
             </ul>
 
         </div>

@@ -1,9 +1,9 @@
 
 
 <div class="form-group row">
-    <label class="col-4 col-form-label" for="example-input-normal">Tanggal Awal Periode</label>
+    <label class="col-4 col-form-label" for="example-input-normal">Tanggal Awal</label>
     <div class="col-8">
-        {!! Form::text('open_date', null, ['class' => $errors->has('open_date') ? 'form-control datepicker is-invalid' : 'form-control datepicker', 'placeholder' => 'Tanggal Awal Periode', 'autocomplete' => 'off' ]) !!}
+        {!! Form::text('open_date', null, ['class' => $errors->has('open_date') ? 'form-control datepicker is-invalid' : 'form-control datepicker', 'placeholder' => 'Masukan Tanggal Awal', 'autocomplete' => 'off' ]) !!}
         @error('open_date')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -12,9 +12,9 @@
     </div>
 </div>
 <div class="form-group row">
-    <label class="col-4 col-form-label" for="example-input-normal">Tanggal Akhir Periode</label>
+    <label class="col-4 col-form-label" for="example-input-normal">Tanggal Akhir</label>
     <div class="col-8">
-        {!! Form::text('close_date', null, ['class' => $errors->has('close_date') ? 'form-control datepicker is-invalid' : 'form-control datepicker', 'placeholder' => 'Tanggal Akhir Periode', 'autocomplete' => 'off' ]) !!}
+        {!! Form::text('close_date', null, ['class' => $errors->has('close_date') ? 'form-control datepicker is-invalid' : 'form-control datepicker', 'placeholder' => 'Masukan Tanggal Akhir', 'autocomplete' => 'off' ]) !!}
         @error('close_date')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
@@ -23,9 +23,9 @@
     </div>
 </div>
 <div class="form-group row">
-    <label class="col-4 col-form-label" for="example-input-normal">Nama Periode</label>
+    <label class="col-4 col-form-label" for="example-input-normal">Nama Tahun Buku</label>
     <div class="col-8">
-        {!! Form::text('name', null, ['class' => $errors->has('name') ? 'form-control is-invalid' : 'form-control', 'placeholder' => 'Nama Periode']) !!}
+        {!! Form::text('name', null, ['class' => $errors->has('name') ? 'form-control is-invalid' : 'form-control', 'placeholder' => 'Tahun Buku']) !!}
         @error('name')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>

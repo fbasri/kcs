@@ -32,7 +32,7 @@
                     <td id="nama-anggota"></td>
                 </tr>
                 <tr>
-                    <td><strong>Nama Inisial</strong></td>
+                    <td><strong>No HP</strong></td>
                     <td>:</td>
                     <td id="nama-inisial"></td>
                 </tr>
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="form-group clearfix">
-                <label for="Pokok" class="control-label">Bunga</label>
+                <label for="Pokok" class="control-label">Jasa</label>
                 <div class="">
                     <input type="hidden" class="form-control" name="id_biaya_bunga_pinjaman" value="7">
                     <input type="text" class="form-control biaya" name="nominal_bunga" value="{{ old('nominal_bunga', $nominal_bunga ?? null) }}">
